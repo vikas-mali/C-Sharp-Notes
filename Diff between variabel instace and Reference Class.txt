@@ -1,0 +1,58 @@
+class - It's a user-detined type 
+
+Variable of a class : A compy of the class that is not initialized.
+Example:->
+class First
+{
+    int x = 100;
+    static void Main()
+    {
+        First f; // This is a variable of a class.
+        Console.WriteLine(f.x); // Gives error.
+        Console.ReadLine();
+    }
+}
+
+Instance of a class : A copy of the class that is initialized by using the new keyword which has its own memory and never sshared with another instance.
+Example :->
+class First 
+{
+    int x = 100;
+    static void Main()
+    {
+        First f1 = new First(); // This is a instance of a class.
+        First f2 = new First(); // This is a instace of a class.
+        Console.WriteLine(f1.x + " " + f2.x); // output -> 100 100
+        f1.x = 200;
+        Console.WriteLine(f1.x + " " + f2.x); // output -> 200 100
+        f2.x = 300;
+        Console.WriteLine(f1.x + " " + f2.x); // output -> 200 300
+        Console.ReadLine();        
+    }
+}
+
+Reference of a class : A copy of the class that is initialized by using existing instance and references of a class will not have any memory allocation they will be sharing the same memory of the instace that assigned for initializing the variable.
+Example :->
+class First 
+{
+    int x = 100;
+    static void Main()
+    {
+        First f1 = new First(); // This is a instance of a class.
+        First f2 = f1; // This is a reference of a class.
+
+        Console.WriteLine(f1.x + " " + f2.x); // output -> 100 100
+        f1.x = 200;
+        Console.Writeline(f1.x + " " + f2.x); // output -> 200 200
+        f2.x = 300;
+        Console.Writeline(f1.x + " " + f2.x); // output -> 300 300
+        Console.ReadLine();
+    }
+}
+
+-Reference of a class can be called as a pointer to the instace and every modification we perform on the members using instance reflects when we access those members through reference and vice-versa.
+
+
+
+
+
