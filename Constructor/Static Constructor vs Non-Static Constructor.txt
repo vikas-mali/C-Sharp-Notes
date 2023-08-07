@@ -1,0 +1,19 @@
+Static Constructor vs Non-Static Constructors:
+
+-If a constructor is explicitly decalred by using a static modifier we call that constructor as a static constructor where as rest of other are non-static constructors only.
+
+- Constructors are responsible for initializing fields/variables of a class, so static fields are initialized by static constructors and non-staic fields are initialized by non-static constructors.
+
+- Staic constuctors are implicitly called whereas non-static constructors must be explicitly called.
+
+-Static constructors executes immediately once the execution of a class starts and more over it's the first block of code to run under a class whereas non-static constructors executes only after creating the instance of class as well as each and every time the instace of class is created.
+
+- In the life cycle of a class static constructor executes once and only one time where as non-static constructor executes for zero time if no instaces are created and "n" time if "n" intances are created.
+
+- Non-static constructors can be parameterized but static constructors can't have any parameters because static constructors are implecitly called ad more over it's the first block of code to run under the class.
+
+- Every class contains an implicite constructor if not defined explicitly and those implicit constructors are defined based on the follwing criteria.
+
+- Every class except a static class contains an implicite non-stic constructor if not defined with an explict construcor.
+
+- Satic constructors are implicitely defined only if that class contanins any static field or else thet constructor will not be present a all.
