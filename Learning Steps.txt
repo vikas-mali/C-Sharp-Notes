@@ -1,0 +1,4 @@
+1. Learn a small topics or item.
+2. Practice the basics.
+3. Practice the edge cases.
+4. Repeat.
